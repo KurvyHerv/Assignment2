@@ -37,3 +37,7 @@ button {
 button.guest {
     background-color: #3498db;
 }
+
+button:hover {
+    background-color: #45a049;
+}
