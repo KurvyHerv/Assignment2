@@ -7,3 +7,7 @@ function logIn() {
     alert("Back to sign in page");
     window.location.href="logIn.html";
 }
+
+function index() {
+    window.location.href="index.html";
+}
