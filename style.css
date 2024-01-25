@@ -1,3 +1,12 @@
 .btn-style{
     background-image: url(images/button.png);
 }
+
+@font-face {
+    font-family: GameFont;
+    src: url(https://archive.org/download/Fontworks/Fonts/FOT-RodinBokutoh%20Pro%20EB.otf);
+}
+
+* {
+    font-family: GameFont;
+}
