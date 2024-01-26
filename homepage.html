@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
 </head>
-<body class="bg-image" style="background-image: url(images/homepage-wallpaper.png);">
-    <nav class="navbar" style="background-color: rgb(255, 171, 171); position: fixed; width: 100%; z-index: 2;">
+<body class="bg-image" style="background-image: url(images/home-bg.png); position: relative; background-position: center; background-repeat: nono-repeat; background-size: cover;">
+    <nav class="navbar" style="background-color:rgb(245, 204, 159); position: fixed; width: 100%; z-index: 2;">
         <div class="container-fluid">
-          <a class="navbar-brand" style="color: white;">Animal Crossing Match</a>
+          <img class="navbar-brand" src="images/logo.png" style="width: 60px; height: 40px;">
           <div class="dropdown-center d-flex">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: rgb(255, 218, 224); ">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: rgb(183, 139, 93); ">
               Account
             </button>
             <ul class="dropdown-menu">
@@ -25,8 +25,8 @@
     </nav>
     <div class="container-fluid text-center">
       <div class="row">
-        <div class="col" style="background-color: rgb(152, 193, 255);">
-          <ol class="list-group list-group-numbered">
+        <div class="col" style="background-color: rgba(255, 255, 255, 0.5);">
+          <ol class="list-group list-group-numbered" style="padding-top: 10vh;">
             <li class="list-group-item d-flex justify-content-between align-items-start">
               <div class="ms-2 me-auto">
                 <div class="fw-bold">Username</div>
@@ -56,10 +56,10 @@
               <div class="row">
                 <div class="d-grid gap-2">
                   <div class="d-grid gap-2 d-md-block">
-                    <button class="btn btn-primary btn-lg" type="button">Ranked</button>
-                    <button class="btn btn-primary btn-lg" type="button">Endless</button>
+                    <button class="btn btn-lg btn-style" type="button" style="color: white;">Ranked</button>
+                    <button class="btn btn-lg btn-style" type="button" style="color: white;">Endless</button>
                   </div>
-                    <a class="btn btn-primary" type="button" href="homepage.html">Continue as Guest</a>
+                    <a class="btn btn-lg btn-style" type="button" href="homepage.html" style="color: white;">Continue as Guest</a>
                 </div>
             </div>
         </div>
