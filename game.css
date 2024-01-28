@@ -1,0 +1,39 @@
+.btn-style{
+    background-image: url(images/button.png);
+}
+
+@font-face {
+    font-family: GameFont;
+    src: url(https://archive.org/download/Fontworks/Fonts/FOT-RodinBokutoh%20Pro%20EB.otf);
+}
+
+* {
+    font-family: GameFont;
+}
+
+body {
+    background: url("images/game-bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+#board {
+    width: 500px;
+    height: 500px;
+    background-color: rgb(73, 77, 96);
+    border: 5px solid slategray;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2;
+}
+
+#board img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border-color: #74664B;
+}
