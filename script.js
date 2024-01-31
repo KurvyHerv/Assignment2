@@ -1,3 +1,6 @@
+const docRef = doc(assignment2, "users", "hervsie@gmail.com");
+const docSnap = await getDoc(docRef);
+
 document.addEventListener("DOMContentLoaded", function() {
   const APIKEY = "65b471a98b1bd4aa1706fb1a";
   document.getElementById("loginSubmit").addEventListener("click", function(e) {
