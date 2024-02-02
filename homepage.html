@@ -7,129 +7,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
 </head>
-<body class="bg-image" style="background-image: url(images/home-bg.png); position: relative; background-position: center; background-repeat: no-repeat; background-size: cover;">
-    <nav class="navbar" style="background-color:rgb(245, 204, 159); position: fixed; width: 100%; z-index: 2;">
-        <div class="container-fluid">
-          <img class="navbar-brand" src="images/logo.png" style="width: 60px; height: 40px;">
+<body>
+
+  need to fix nav bar to the right
+	<!-- <nav class="navbar navbar-expand-sm navbar-light bg-success">
+	  <div class="container-fluid ">
+		<a class="navbar-brand " href="#">Navbar</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+		  <ul class="navbar-nav ">
+			<li class="nav-item">
+			  <a class="nav-link active" aria-current="page" href="#">Home</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Course</a>
+			</li>			
+		  </ul>		  
+		</div>
+	  </div>
+	</nav> -->
+
+
+
+    <nav id="navbar-example" class="navbar px-3 mb-3 navbar-expand-lg" style="background-color:rgb(176, 212, 255, 0.7); position: fixed; width: 100%; z-index: 2;">
+      <a class="navbar-brand active" href="homepage.html"><img class="navbar-brand" src="images/logo.png" style="width: 60px; height: 50px;"></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo" aria-controls="navbarTogglerDemo" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="active fw-bold">
+              <a class="nav-link" href="#Home" style="color: white;">Home</a>
+          </li>
+          <li class="active fw-bold">
+              <a class="nav-link" href="#News" style="color: white;">News</a>
+          </li>
+          <li class="active fw-bold">
+              <a class="nav-link" href="#AboutUs" style="color: white;">About us</a>
+          </li>
+
           <div class="dropdown-center d-flex">
-            <button class="btn btn-secondary dropdown-toggle fw-bold" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: rgb(183, 139, 93);">
+            <button class="btn btn-secondary dropdown-toggle fw-bold rounded-pill" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: rgb(63, 150, 255);">
               Account
             </button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item fw-bold" href="#" style="color:#74664B">Profile</a></li>
-              <li><a class="dropdown-item fw-bold" href="#" style="color:#74664B">Settings</a></li>
-              <li><a class="dropdown-item fw-bold" href="index.html" style="color:#74664B">Logout</a></li>
+              <li><a class="dropdown-item fw-bold" href="account.html" style="color:rgb(0, 49, 108)">My Account</a></li>
+              <li><a class="dropdown-item fw-bold" href="index.html" style="color:rgb(0, 49, 108)">Logout</a></li>
             </ul>
           </div>
-        </div>
+        </ul>
+      </div>
     </nav>
-    <div class="container-fluid text-center">
-      <div class="row">
-        <div class="col" style="background-color: rgba(255, 255, 255, 0.5);">
-          <ol class="list-group list-group-numbered" style="padding-top: 10vh;">
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="ms-2 me-auto">
-                <div class="fw-bold">Username</div>
-                Content for list item
-              </div>
-              <span class="badge bg-primary rounded-pill">20918 Points</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="ms-2 me-auto">
-                <div class="fw-bold">Username</div>
-                Content for list item
-              </div>
-              <span class="badge bg-primary rounded-pill">19837 Points</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="ms-2 me-auto">
-                <div class="fw-bold">Username</div>
-                Content for list item
-              </div>
-              <span class="badge bg-primary rounded-pill">14283 Points</span>
-            </li>
-          </ol>
-        </div>
-        <div class="col-8" >
-          <div class="row align-items-center justify-content-center d-flex">
-            <div class="vh-100 d-flex justify-content-center align-items-center">
-              <div class="row">
-                <div class="d-grid gap-2">
-                  <div class="d-grid gap-2 d-md-block">
-                    <button class="btn btn-lg btn-style fw-bold rounded-pill" type="button" style="color: white;" onclick="window.location.href='gameplay-ranked.html'">Ranked</button>
-                    <button class="btn btn-lg btn-style fw-bold rounded-pill" type="button" style="color: white;" onclick="window.location.href='gameplay-endless.html'">Endless</button>
-                  </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div>
-    <div class="card mb-3">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-      <div class="col">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
 
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/acnh-event.webp" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Chinese New Year Event!</h5>
-              <p>Enjoy special events!.</p>
-            </div>
+
+    <section id="Home" class="bg-image" style="background-image: url(images/home-bg.png); position: relative; background-position: center; background-repeat: no-repeat; background-size: cover;">
+      <div class="container-fluid text-center">
+        <div class="row">
+          <div class="col" style="background-color: rgba(255, 255, 255, 0.5); padding-top: 10vh;">
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Username</div>
+                  Content for list item
+                </div>
+                <span class="badge bg-primary rounded-pill">20918 Points</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Username</div>
+                  Content for list item
+                </div>
+                <span class="badge bg-primary rounded-pill">19837 Points</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Username</div>
+                  Content for list item
+                </div>
+                <span class="badge bg-primary rounded-pill">14283 Points</span>
+              </li>
+            </ol>
           </div>
-          <div class="carousel-item">
-            <img src="images/acnh-event2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>New Event?!?!</h5>
-              <p>Play more games to find clues!</p>
-            </div>
+          <div class="col-8" >
+            <div class="row align-items-center justify-content-center d-flex">
+              <div class="vh-100 d-flex justify-content-center align-items-center">
+                <div class="row">
+                  <div class="d-grid gap-2">
+                    <div class="d-grid gap-2 d-md-block">
+                      <button class="btn btn-lg btn-style fw-bold rounded-pill" type="button" style="color: white;" onclick="window.location.href='gameplay-ranked.html'">Custom</button>
+                      <button class="btn btn-lg btn-style fw-bold rounded-pill" type="button" style="color: white;" onclick="window.location.href='gameplay-endless.html'">Endless</button>
+                    </div>
+                  </div>
+              </div>
           </div>
-          <div class="carousel-item">
-            <img src="images/acnh-event3.webp" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Event closes 31 Febuary</h5>
-              <p>Remember to claim rewards</p>
-            </div>
           </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
+    </section>
+
+
+    <section id="News" class="justify-content-center align-items-center" style="background-color: rgb(255, 255, 255); background-size: cover; padding-top: 50px; padding:1.5rem;">
+    </section>
+
+    <section id="#AboutUs">
+
+    </section>
+
 <script src="script.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
