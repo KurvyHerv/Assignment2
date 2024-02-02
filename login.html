@@ -17,12 +17,16 @@
         <div class="card-body bg-white">
           <form action="#">
             <div class="form-floating mb-2 fw-bold" style="color: #74664B;">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="name@example.com">
+              <form class="form-floating">
+                <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com">
+                <label for="floatingInputValue">Email Address</label>
+              </form>
             </div>
             <div class="form-floating mb-2 mt-4 fw-bold"style="color: #74664B;">
-              <label for="password">Password</label>
-              <input type="password" class="form-control" id="password" placeholder="Password">
+              <form class="form-floating">
+                <input type="password" class="form-control" id="floatingInputValue" placeholder="passwordHelpBlock">
+                <label for="floatingInputValue">Password</label>
+              </form>
             </div>
             <div class="d-grid mb-2 mt-4 text-center fw-bold">
               <input type="submit" class="btn btn-lg" id="loginSubmit" style="color:white;background-color: rgb(162, 152, 139);" value="Log In">
