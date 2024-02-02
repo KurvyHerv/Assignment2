@@ -1,12 +1,11 @@
-const docRef = doc(assignment2, "users", "hervsie@gmail.com");
-const docSnap = await getDoc(docRef);
+async function getUsers(db) {
+  const usersCol = collection(db, 'cities');
+  const userSnapshot = await getDocs(usersCol);
+  const userList = userSnapshot.docs.map(doc => doc.data());
+  return userList;
+}
 
 document.addEventListener("DOMContentLoaded", function() {
+  getUsers(db);
 
-if (docSnap.exists()) {
-  console.log("Document data:", docSnap.data());
-} else {
-  // docSnap.data() will be undefined in this case
-  console.log("No such document!");
-}
 });
