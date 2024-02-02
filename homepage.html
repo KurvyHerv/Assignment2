@@ -8,9 +8,38 @@
     <title>Home Page</title>
 </head>
 <body>
-    <nav id="navbar-example2" class="navbar px-3 mb-3" style="background-color:rgb(176, 212, 255, 0.7); position: fixed; width: 100%; z-index: 2;">
+
+  need to fix nav bar to the right
+	<!-- <nav class="navbar navbar-expand-sm navbar-light bg-success">
+	  <div class="container-fluid ">
+		<a class="navbar-brand " href="#">Navbar</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+		  <ul class="navbar-nav ">
+			<li class="nav-item">
+			  <a class="nav-link active" aria-current="page" href="#">Home</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Course</a>
+			</li>			
+		  </ul>		  
+		</div>
+	  </div>
+	</nav> -->
+
+
+
+    <nav id="navbar-example" class="navbar px-3 mb-3 navbar-expand-lg" style="background-color:rgb(176, 212, 255, 0.7); position: fixed; width: 100%; z-index: 2;">
       <a class="navbar-brand active" href="homepage.html"><img class="navbar-brand" src="images/logo.png" style="width: 60px; height: 50px;"></a>
-      <ul class="nav nav-pills">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo" aria-controls="navbarTogglerDemo" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="active fw-bold">
               <a class="nav-link" href="#Home" style="color: white;">Home</a>
           </li>
@@ -20,21 +49,18 @@
           <li class="active fw-bold">
               <a class="nav-link" href="#AboutUs" style="color: white;">About us</a>
           </li>
-        <div class="dropdown-center d-flex">
-          <button class="btn btn-secondary dropdown-toggle fw-bold rounded-pill" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: rgb(63, 150, 255);">
-            Account
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item fw-bold" href="account.html" style="color:rgb(0, 49, 108)">My Account</a></li>
-            <li><a class="dropdown-item fw-bold" href="index.html" style="color:rgb(0, 49, 108)">Logout</a></li>
-          </ul>
-        </div>
+
+          <div class="dropdown-center d-flex">
+            <button class="btn btn-secondary dropdown-toggle fw-bold rounded-pill" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: rgb(63, 150, 255);">
+              Account
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item fw-bold" href="account.html" style="color:rgb(0, 49, 108)">My Account</a></li>
+              <li><a class="dropdown-item fw-bold" href="index.html" style="color:rgb(0, 49, 108)">Logout</a></li>
+            </ul>
+          </div>
+        </ul>
       </div>
-          </div>
-          </div>
-          </ul>
-        </li>
-      </ul>
     </nav>
 
 
