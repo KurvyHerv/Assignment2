@@ -18,13 +18,13 @@
           <form action="#">
             <div class="form-floating mb-2 fw-bold" style="color: #74664B;">
               <form class="form-floating">
-                <input type="email" class="form-control" id="floatingInputValue" placeholder="name@example.com">
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
                 <label for="floatingInputValue">Email Address</label>
               </form>
             </div>
             <div class="form-floating mb-2 mt-4 fw-bold"style="color: #74664B;">
               <form class="form-floating">
-                <input type="password" class="form-control" id="floatingInputValue" placeholder="passwordHelpBlock">
+                <input type="password" class="form-control" id="password" placeholder="passwordHelpBlock">
                 <label for="floatingInputValue">Password</label>
               </form>
             </div>
@@ -46,27 +46,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
-  import { getFirestore } from "firebase/firestore";
-  import { doc, getDoc } from "firebase/firestore";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyA8pGEb5R2z-6tJ0EWQTpzodg_XfetCLzM",
-    authDomain: "assignment2-c611f.firebaseapp.com",
-    projectId: "assignment2-c611f",
-    storageBucket: "assignment2-c611f.appspot.com",
-    messagingSenderId: "624702798608",
-    appId: "1:624702798608:web:92f6ac8760ba9955010395"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const db = getFirestore(app);
-</script>
+<script src="https://code.jquery.com/jquery-3.7.1.js"integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="crossorigin="anonymous"></script>
+<script type="module" src="script.js"></script>
 </body>
 </html>
