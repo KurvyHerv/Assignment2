@@ -2,6 +2,7 @@
     background-image: url(images/button.png);
 }
 
+/* fonts */
 @font-face {
     font-family: GameFont;
     src: url(https://archive.org/download/Fontworks/Fonts/FOT-RodinBokutoh%20Pro%20EB.otf);
@@ -11,6 +12,13 @@
     font-family: GameFont;
 }
 
+/* body */
+body{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* background */
 #background {
     position: fixed;
     top: 0;
@@ -19,6 +27,13 @@
     min-height: 100%;
     z-index:-100;
   }
+
+/* navbar */
+nav.container{
+    display: flex;
+    justify-content: right;
+    position: relative;
+}
 
 section {
     min-width: 100vw;
