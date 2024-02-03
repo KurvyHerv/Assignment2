@@ -1,6 +1,6 @@
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
-  import { getFirestore, doc, getDoc, getDocs, collection, query, where} from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
+  import { getFirestore, doc, setDoc, getDocs, collection, query, where} from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
 
   // Firebase configuration
   const firebaseConfig = {
@@ -15,6 +15,22 @@
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
+
+  async function registerNewUser(username, password) {
+    await setDoc(doc(db, "users", username), {
+      username: username,
+      password: password,
+      score: 0
+    });
+    const querySnapshot = await getDocs(query(collection(db, "users"), where("username", "==", username.toLowerCase()), where("password", "==", password)));
+    if (querySnapshot.empty) {
+      console.log("An error occured")
+    } else {
+      querySnapshot.forEach((doc) => {
+        window.location.href = "login.html";
+    });
+    }
+  }
 
   async function querySnapshot(q) {
     const querySnapshot = await getDocs(q);
@@ -34,4 +50,12 @@
 
     const q = query(collection(db, "users"), where("username", "==", username.toLowerCase()), where("password", "==", password));
     querySnapshot(q);
+    
+  });
+
+  $("#signUp").click(function(){
+    const username = $("#registerUsername").val();
+    const password = $("#registerPassword").val();
+
+    registerNewUser(username.toLowerCase(), password);
   });
