@@ -30,7 +30,7 @@ function startGame() {
             // <img id="0-0" src="./images/Red.png">
             let tile = document.createElement("img");
             tile.id = r.toString() + "-" + c.toString();
-            tile.src = "./images/" + randomCandy() + ".png";
+            tile.src = "./images/game/" + randomCandy() + ".png";
 
             //DRAG FUNCTIONALITY
             tile.addEventListener("dragstart", dragStart); //click on a candy, initialize drag process
@@ -125,9 +125,9 @@ function crushThree() {
             let candy2 = board[r][c+1];
             let candy3 = board[r][c+2];
             if (candy1.src == candy2.src && candy2.src == candy3.src && !candy1.src.includes("blank")) {
-                candy1.src = "./images/blank.png";
-                candy2.src = "./images/blank.png";
-                candy3.src = "./images/blank.png";
+                candy1.src = "./images/game/blank.png";
+                candy2.src = "./images/game/blank.png";
+                candy3.src = "./images/game/blank.png";
                 score += 30;
             }
         }
@@ -140,9 +140,9 @@ function crushThree() {
             let candy2 = board[r+1][c];
             let candy3 = board[r+2][c];
             if (candy1.src == candy2.src && candy2.src == candy3.src && !candy1.src.includes("blank")) {
-                candy1.src = "./images/blank.png";
-                candy2.src = "./images/blank.png";
-                candy3.src = "./images/blank.png";
+                candy1.src = "./images/game/blank.png";
+                candy2.src = "./images/game/blank.png";
+                candy3.src = "./images/game/blank.png";
                 score += 30;
             }
         }
@@ -189,7 +189,7 @@ function slideCandy() {
         }
 
         for (let r = ind; r >= 0; r--) {
-            board[r][c].src = "./images/blank.png";
+            board[r][c].src = "./images/game/blank.png";
         }
     }
 }
@@ -197,7 +197,7 @@ function slideCandy() {
 function generateCandy() {
     for (let c = 0; c < columns;  c++) {
         if (board[0][c].src.includes("blank")) {
-            board[0][c].src = "./images/" + randomCandy() + ".png";
+            board[0][c].src = "./images/game/" + randomCandy() + ".png";
         }
     }
 }

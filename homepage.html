@@ -18,14 +18,19 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="active fw-bold">
-              <a class="nav-link" href="#News" style="color: white;">Players</a>
+            <a class="nav-link" href="#Home" style="color: white;">Home</a>
+          </li>
+          <li class="active fw-bold">
+              <a class="nav-link" href="#Players" style="color: white;">Players</a>
           </li>
           <li class="active fw-bold">
               <a class="nav-link" href="#AboutUs" style="color: white;">About us</a>
           </li>
         </ul>
         <span class="dropdown-center d-flex">
-          <button class="btn btn-secondary dropdown-toggle fw-bold rounded-pill" type="button" id="accountBtn" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: rgb(63, 150, 255);">Account</button>
+          <button class="btn btn-secondary dropdown-toggle fw-bold rounded-pill" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: rgb(63, 150, 255);">
+            Account
+          </button>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item fw-bold" href="account.html" style="color:rgb(0, 49, 108)">My Account</a></li>
             <li><a class="dropdown-item fw-bold" href="index.html" style="color:rgb(0, 49, 108)">Logout</a></li>
@@ -34,8 +39,7 @@
       </div>
     </nav>
 
-
-    <section id="Home" class="bg-image" style="background-image: url(images/home-bg.png); position: relative; background-position: center; background-repeat: no-repeat; background-size: cover;">
+    <section id="Home" class="bg-image" style="background-image: url(images/wallpaper/home-bg.png); position: relative; background-position: center; background-repeat: no-repeat; background-size: cover;">
       <div class="container-fluid text-center">
         <div class="row">
           <div class="col" style="background-color: rgba(255, 255, 255, 0.5); padding-top: 10vh;">
@@ -81,10 +85,113 @@
 
 
     <section id="Players" class="justify-content-center align-items-center" style="background-color: rgb(255, 255, 255); background-size: cover; padding-top: 50px; padding:1.5rem;">
+      <div class="container-fluid">
+        <div class="col" style="padding-left: 150px; padding-right: 150px; padding-top: 10vh;">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search for Players" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+
+        <div class="col" style="background-color: rgba(255, 255, 255, 0.5); padding-top: 5vh;">
+          <div id="player-nav" style="overflow:scroll; height:500px;">
+            <ol class="list-group list-group-numbered">
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Username</div>
+                  Content for list item
+                </div>
+                <span class="badge bg-primary rounded-pill">20918 Points</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Username</div>
+                  Content for list item
+                </div>
+                <span class="badge bg-primary rounded-pill">19837 Points</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Username</div>
+                  Content for list item
+                </div>
+                <span class="badge bg-primary rounded-pill">14283 Points</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Username</div>
+                  Content for list item
+                </div>
+                <span class="badge bg-primary rounded-pill">14283 Points</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Username</div>
+                  Content for list item
+                </div>
+                <span class="badge bg-primary rounded-pill">14283 Points</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Username</div>
+                  Content for list item
+                </div>
+                <span class="badge bg-primary rounded-pill">14283 Points</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Username</div>
+                  Content for list item
+                </div>
+                <span class="badge bg-primary rounded-pill">14283 Points</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Username</div>
+                  Content for list item
+                </div>
+                <span class="badge bg-primary rounded-pill">14283 Points</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="#AboutUs">
-
+    <section id="AboutUs">
+        <div class="container-fluid">
+          <div class="col" style="height: 40vh;">
+            <video autoplay muted loop id="indexBg" class="embed-responsive embed-responsive-16by9">
+              <source src="video/about-us-bg.mp4" type="video/mp4">
+            </video>
+            <div class="position-relative">
+              <div class="d-flex justify-content-center align-items-center">
+                About Us
+              </div>
+            </div>
+          </div>
+          <div class="col" style="background-color: rgb(255, 255, 255); height: 60vh;">
+            <div class="row" style="padding-top: 20vh;">
+              <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
     </section>
 
     <section id="footer">
