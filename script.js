@@ -1,10 +1,8 @@
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
-  import { getFirestore, doc, getDoc, getDocs, collection } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+  import { getFirestore, doc, getDoc, getDocs, collection, query, where} from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
 
-  // Your web app's Firebase configuration
+  // Firebase configuration
   const firebaseConfig = {
     apiKey: "AIzaSyA8pGEb5R2z-6tJ0EWQTpzodg_XfetCLzM",
     authDomain: "assignment2-c611f.firebaseapp.com",
@@ -18,14 +16,22 @@
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
 
-  const docRef = doc(db, "users", "hervsie@gmail.com");
-  const docSnap = await getDoc(docRef);
+  async function querySnapshot(q) {
+    const querySnapshot = await getDocs(q);
+    if (querySnapshot.empty) {
+      console.log("Wrong password or username")
+    } else {
+      querySnapshot.forEach((doc) => {
+        window.location.href = "homepage.html";
+    });
+    }
+  }
+
 
   $("#loginSubmit").click(function(){
-    if (docSnap.exists()) {
-      console.log("Document data:", docSnap.data());
-    } else {
-      // docSnap.data() will be undefined in this case
-      console.log("No such document!");
-    }
+    const username = $("#username").val();
+    const password = $("#password").val();
+
+    const q = query(collection(db, "users"), where("username", "==", username.toLowerCase()), where("password", "==", password));
+    querySnapshot(q);
   });
