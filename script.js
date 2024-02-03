@@ -47,10 +47,10 @@
   $("#loginSubmit").click(function(){
     const username = $("#username").val();
     const password = $("#password").val();
+    localStorage.setItem("username",username);
 
     const q = query(collection(db, "users"), where("username", "==", username.toLowerCase()), where("password", "==", password));
     querySnapshot(q);
-    localStorage.setItem("username",username);
   });
 
   $("#signUp").click(function(){
