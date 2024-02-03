@@ -18,9 +18,6 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="active fw-bold">
-              <a class="nav-link" href="#Home" style="color: white;">Home</a>
-          </li>
-          <li class="active fw-bold">
               <a class="nav-link" href="#News" style="color: white;">Players</a>
           </li>
           <li class="active fw-bold">
@@ -28,9 +25,7 @@
           </li>
         </ul>
         <span class="dropdown-center d-flex">
-          <button class="btn btn-secondary dropdown-toggle fw-bold rounded-pill" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: rgb(63, 150, 255);">
-            Account
-          </button>
+          <button class="btn btn-secondary dropdown-toggle fw-bold rounded-pill" type="button" id="accountBtn" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: rgb(63, 150, 255);">Account</button>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item fw-bold" href="account.html" style="color:rgb(0, 49, 108)">My Account</a></li>
             <li><a class="dropdown-item fw-bold" href="index.html" style="color:rgb(0, 49, 108)">Logout</a></li>
@@ -102,5 +97,11 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script type="module" src="script.js"></script>
+<script>
+$( document ).ready(function() {
+  $("#accountBtn").text(localStorage.getItem("username"));
+  console.log(":heldsfa")
+});
+</script>
 </body>
 </html>

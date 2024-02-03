@@ -50,7 +50,7 @@
 
     const q = query(collection(db, "users"), where("username", "==", username.toLowerCase()), where("password", "==", password));
     querySnapshot(q);
-    
+    localStorage.setItem("username",username);
   });
 
   $("#signUp").click(function(){
@@ -59,3 +59,5 @@
 
     registerNewUser(username.toLowerCase(), password);
   });
+
+
