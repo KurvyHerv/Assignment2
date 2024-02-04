@@ -12,7 +12,7 @@
 }
 
 body {
-    background: url("images/wallpaper/game-bg-2.jpg") no-repeat center center fixed;
+    background: url("images/wallpaper/gameplay-2-bg.jpg") no-repeat center center fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -41,3 +41,29 @@ body {
     border-radius: 25px;
     border-color: #74664B;
 }
+
+.button-container{
+    display: flex;
+    padding: 100px;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    background-color: rgb(109, 102, 93);;
+    color: rgb(255, 255, 255);
+  }
+  
+  .previous {
+    background-color: rgb(162, 152, 139);;
+    color: rgb(255, 255, 255);
+  }
+  
+  .round {
+    border-radius: 50%;
+  }
