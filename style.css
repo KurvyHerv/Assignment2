@@ -59,6 +59,12 @@ section {
     margin-inline-end: 0px;
 }
 
+#AboutUs .d-flex{
+    color: white;
+    padding-top: 20vh;
+    padding-left: 11vw;
+}
+
 #AboutUs img{
     object-fit: contain;
     width: 64px;
