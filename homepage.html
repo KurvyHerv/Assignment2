@@ -21,9 +21,6 @@
             <a class="nav-link" href="#Home" style="color: white;">Home</a>
           </li>
           <li class="active fw-bold">
-              <a class="nav-link" href="#Players" style="color: white;">Players</a>
-          </li>
-          <li class="active fw-bold">
               <a class="nav-link" href="#AboutUs" style="color: white;">About us</a>
           </li>
         </ul>
@@ -40,9 +37,10 @@
     <section id="Home" class="bg-image" style="background-image: url(images/wallpaper/home-bg.png); position: relative; background-position: center; background-repeat: no-repeat; background-size: cover;">
       <div class="container-fluid text-center">
         <div class="row">
-          <div class="col" style="background-color: rgba(255, 255, 255, 0.5); padding-top: 10vh;">
-            <ol class="list-group list-group-numbered" id="leaderboardList2">
-            </ol>
+          <div class="col" style="background-color: rgba(255, 255, 255, 0.5); padding-top: 12vh;">
+            <div id="player-nav" style="overflow:scroll; height:700px;">
+              <ol class="list-group list-group-numbered" id="leaderboardList2"></ol>
+            </div>
           </div>
           <div class="col-8" >
             <div class="row align-items-center justify-content-center d-flex">
@@ -60,8 +58,8 @@
       </div>
     </section>
 
-
-    <section id="Players" class="justify-content-center align-items-center" style="background-color: rgb(255, 255, 255); background-size: cover; padding-top: 50px; padding:1.5rem;">
+<!-- in progress -->
+    <!-- <section id="Players" class="justify-content-center align-items-center" style="background-color: rgb(255, 255, 255); background-size: cover; padding-top: 50px; padding:1.5rem;">
       <div class="container-fluid">
         <div class="col" style="padding-left: 150px; padding-right: 150px; padding-top: 10vh;">
           <form class="d-flex" role="search">
@@ -77,7 +75,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section id="AboutUs">
         <div class="container-fluid" style="padding-left: 0; padding-right: 0;">
@@ -96,13 +94,15 @@
               <div class="our-inspiration" style="padding-left: 10vw; padding-right: 10vw;">
                 <header><h1 class="fw-bold">Our Inspiration</h1></header>
                 <p style="white-space: pre-wrap;">"In our shared passion symphony, we crafted a digital sanctuary inspired by Animal Crossing. As architects of pixels and dreams, we immersed ourselves in collaborative artistry, weaving a narrative beyond the screen—a story celebrating connection and boundless possibilities. Our journey, an unfolding tapestry, encapsulated the joyous dance of collaboration. Rena's artistry, Hervin's wizardry, and our passion transformed challenges into shared victories. Our game, born from dream fusion, beckons players to a world where friendships thrive, imagination unfolds, and the infinite dance of dreams awaits—a canvas of shared virtual reality."</p>
-                  <div class="col icon" style="padding-top: 5vh;">
-                    <a class="link-icon" href="https://github.com/KurvyHerv/Assignment2.git"><img src="images/github-icon.png"></a>
-                      <div class="name">Github</div>
-                  </div>
-                  <div class="col icon" style="padding-top: 5vh;">
-                    <a class="link-icon" href="https://www.figma.com/file/dqUgrKoYk9B6MAlqAfmQlg/FED-assignment-wireframe?type=design&mode=design&t=XGqD6Qy5NksEdjTZ-1"><img src="images/figma-icon.png"></a>
-                      <div class="name">Figma</div>
+                  <div class="row">
+                    <div class="col icon" style="padding-top: 5vh;">
+                      <a class="link-icon" href="https://github.com/KurvyHerv/Assignment2.git"><img src="images/github-icon.png"></a>
+                        <div class="name">Github</div>
+                    </div>
+                    <div class="col icon" style="padding-top: 5vh;">
+                      <a class="link-icon" href="https://www.figma.com/file/dqUgrKoYk9B6MAlqAfmQlg/FED-assignment-wireframe?type=design&mode=design&t=XGqD6Qy5NksEdjTZ-1"><img src="images/figma-icon.png"></a>
+                        <div class="name">Figma</div>
+                    </div>
                   </div>
               </div>
             </div>
@@ -117,7 +117,6 @@
             <div class="container fw-bold">
               <a class="mlink" href="#Home">Home</a>
               <a class="mlink" href="account.html">Account</a>
-              <a class="mlink" href="#Players">Players</a>
               <a class="mlink" href="#AboutUs">About Us</a>
             </div>
           </div>
