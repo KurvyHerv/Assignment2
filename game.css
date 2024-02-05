@@ -2,15 +2,15 @@
     background-image: url(images/button.png);
 }
 
+/* fonts */
 @font-face {
     font-family: GameFont;
-    src: url(https://archive.org/download/Fontworks/Fonts/FOT-RodinBokutoh%20Pro%20EB.otf);
+    src: url(fonts/FOT-Seurat\ Pro\ B.otf);
 }
 
 * {
     font-family: GameFont;
 }
-
 body {
     background: url("images/wallpaper/gameplay-2-bg.jpg") no-repeat center center fixed;
     background-size: cover;
