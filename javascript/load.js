@@ -1,3 +1,3 @@
-$(window).ready(function() {
-    $('#untilContentLoads').hide();
-});
+// $(window).ready(function() {
+//     $('#untilContentLoads').hide();
+// });

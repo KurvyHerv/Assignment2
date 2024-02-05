@@ -20,8 +20,11 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="active fw-bold">
-                <a class="nav-link" href="homepage.html" style="color: #74664B;">Home</a>
+                <a class="nav-link" href="homepage.html#Home" style="color: #74664B;">Home</a>
             </li>
+            <li class="active fw-bold">
+              <a class="nav-link" href="homepage.html#Players" style="color: #74664B;">Players</a>
+          </li>
             <li class="active fw-bold">
                 <a class="nav-link" href="homepage.html#AboutUs" style="color: #74664B;">About us</a>
             </li>
@@ -37,83 +40,87 @@
           </span>
         </div>
       </nav>
+      <section>
+      <div class="container-fluid align-items-center justify-content-center d-flex">
+          <div class="row">
+            <div class="col">
 
-    <div class="container-fluid align-items-center justify-content-center d-flex">
-        <div class="row">
-          <div class="col" style="padding-top: 15vh;">
-
-            <div class="card" style="width: 18rem;">
-                <!-- account image -->
-                <img class="card-img-top" src="..." alt="Card image cap"> 
-                <div class="card-body">
-                  <h5 class="card-title text-center fw-bold" id="accountBtn" style="color: #74664B;">Account name</h5>
-                </div>
-                <div class="list-group" style="border-color: rgba(162, 152, 139, 0.175);"> 
-                    <button type="button" class="list-group-item list-group-item-action" style="padding-left: 30px; color: #74664B;" onclick="window.location.href='#Profile'">Profile</button>
-                    <button type="button" class="list-group-item list-group-item-action" style="padding-left: 30px; color: #74664B;" onclick="window.location.href='#Email'">Email Address</button>
-                    <button type="button" class="list-group-item list-group-item-action" style="padding-left: 30px; color: #74664B;" onclick="window.location.href='#Password'">Password</button>
-                    <button type="button" class="list-group-item list-group-item-action" style="padding-left: 30px; color: #74664B;" onclick="window.location.href='index.html'">Sign Out</button>
-                </div>
+              <div class="card" style="width: 18rem;">
+                  <!-- account image -->
+                  <img class="card-img-top" src="..." alt="Card image cap"> 
+                  <div class="card-body">
+                    <h5 class="card-title text-center fw-bold" id="accountBtn" style="color: #74664B;">Account name</h5>
+                  </div>
+                  <div class="list-group" style="border-color: rgba(162, 152, 139, 0.175);"> 
+                      <button type="button" class="list-group-item list-group-item-action" style="padding-left: 30px; color: #74664B;" onclick="window.location.href='#Profile'">Profile</button>
+                      <button type="button" class="list-group-item list-group-item-action" style="padding-left: 30px; color: #74664B;" onclick="window.location.href='#Password'">Password</button>
+                      <button type="button" class="list-group-item list-group-item-action" style="padding-left: 30px; color: #74664B;" onclick="window.location.href='index.html'">Sign Out</button>
+                  </div>
+              </div>
             </div>
-          </div>
 
-          <div class="col-8">
-            <div class="row d-flex" style="padding-top: 15vh;">
-                <div class="card" style="width: 50rem;" id="Profile">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item fw-bold">Profile</li>
-                        <!-- trigger button -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                          Change
-                        </button>
-                        <!-- modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Change</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                ...
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+            <div class="col-8">
+              <div class="row d-flex">
+                  <div class="card" style="width: 50rem;" id="Profile">
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item fw-bold">Profile</li>
+                          <!-- trigger button -->
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Change
+                          </button>
+                          <!-- modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="exampleModalLabel">Change</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  ...
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <li class="list-group-item">
-                          <div class="row g-3 align-items-center">
-                            <div class="col-auto">
-                              <label for="inputUsername" class="col-form-label">Username</label>
-                            </div>
-                            <div class="col-auto">
-                              <input type="username" id="inputUsername" class="form-control">
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                          <div class="row g-3 align-items-center">
-                            <div class="col-auto">
-                              <label for="password" class="col-form-label">Password</label>
-                            </div>
-                            <div class="col-auto">
-                              <input type="password" id="password" class="form-control">
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                          <li class="list-group-item">
+                            <div class="row g-3 align-items-center">
+                              <div class="col-auto">
+                                <label for="inputUsername" class="col-form-label">Username</label>
+                              </div>
+                              <div class="col-auto">
+                                <input type="username" id="inputUsername" class="form-control">
+                              </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="row g-3 align-items-center">
+                              <div class="col-auto">
+                                <label for="password" class="col-form-label">Password</label>
+                              </div>
+                              <div class="col-auto">
+                                <input type="password" id="password" class="form-control">
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
             </div>
-
+          </div>
+        </div>
+      </section>
+    
     <div id="footer" style="background-color: rgb(162, 152, 139);">
       <footer class="footer">
         <div class="main-links">
           <div class="wrapper-links">
             <div class="container fw-bold">
-              <a class="mlink" href="homepage.html">Home</a>
+              <a class="mlink" href="homepage.html#Home">Home</a>
+              <a class="mlink" href="homepage.html#Players">Players</a>
               <a class="mlink" href="account.html">Account</a>
-              <a class="mlink" href="homepage.html">About Us</a>
+              <a class="mlink" href="homepage.html#AboutUs">About Us</a>
             </div>
           </div>
           <div class="wrapper-main">
@@ -124,7 +131,7 @@
           </div>
         </div>
       </footer>
-    </div>
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
