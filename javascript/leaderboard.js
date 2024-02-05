@@ -31,10 +31,10 @@
   async function search(q) {
     const querySnapshot = await getDocs(q);
     if (querySnapshot.empty) {
-      $("#leaderboardList").empty().append("<p>No users for leaderboard</p>")
+      $("#leaderboardList").append("<p>No users for leaderboard</p>")
     } else {
       querySnapshot.forEach((doc) => {
-        $("#leaderboardList").empty().append('<li class="list-group-item d-flex justify-content-between align-items-start"><div class="ms-2 me-auto"><div class="fw-bold">' + doc.data().username + '</div></div><span class="badge bg-primary rounded-pill">' + doc.data().score + ' Points</span></li>');   
+        $("#leaderboardList").append('<li class="list-group-item d-flex justify-content-between align-items-start"><div class="ms-2 me-auto"><div class="fw-bold">' + doc.data().username + '</div></div><span class="badge bg-primary rounded-pill">' + doc.data().score + ' Points</span></li>');   
     });
     }
   }
@@ -47,7 +47,7 @@
 
   $("#submit").click(function(){
     const username = $("#search").val();
-    var q = query(collection(db, "users"), where("username", "==", username.toLowerCase()));
+    var q = query(collection(db, "users"), where("username", ">=", username.toLowerCase()), where("username", "<=", username.toLowerCase() + "\uf8ff"));
     if (username == "") {
       q = query(collection(db, "users"), orderBy("score", "desc"));
       $("#leaderboardList").empty();
@@ -55,6 +55,8 @@
       querySnapshot(q);
     }
     else {
+      $("#leaderboardList").empty();
+      $("#leaderboardList2").empty();
       search(q);
     }
   });
