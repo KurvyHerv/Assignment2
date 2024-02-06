@@ -110,7 +110,7 @@ function dragEnd() {
 }
 
 function crushCandy() {
-    //crushFive();
+    crushFive();
     crushFour();
     crushThree();
     document.getElementById("score").innerText = score;
@@ -185,7 +185,7 @@ function crushFour() {
     }
 }
 
-function crushFour() {
+function crushFive() {
     //check rows
     for (let r = 0; r < rows; r++) {
         for (let c = 0; c < columns-4; c++) {
