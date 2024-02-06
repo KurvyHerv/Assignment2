@@ -21,6 +21,13 @@ body {
     text-align: center;
 }
 
+h1{
+  background-color: rgb(151, 186, 208);
+  width: 250px;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+
 #board {
     width: 500px;
     height: 500px;
@@ -67,10 +74,10 @@ a {
     border-radius: 50%;
   }
 
-  .animation{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.animation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 

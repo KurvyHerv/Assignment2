@@ -24,7 +24,7 @@
     <section id="game" style="background-image: url(images/wallpaper/home-bg.png); position: relative; background-position: center; background-repeat: no-repeat; background-size: cover;">
       <div class="container-fluid text-center pt-100">
         <p id="timer" style="text-align: center; font-size: 60px; margin-top: 0px;"></p>
-        <h1>Score: <span id="score">0</span></h1>
+        <h1 style="color: white;">Score: <span id="score">0</span></h1>
           <div id="board"></div>
       </div>
     </section>
@@ -52,8 +52,10 @@
       </div>
   </div>
   
+  <div id="end" class="animation">
+    <dotlottie-player src="https://lottie.host/91617a1d-4676-46b2-b9cc-21fdfb510ba7/Yk8L4VbPLE.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+  </div>
   
-
 <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 <script src="javascript/game.js"></script>
 <script src="javascript/timer.js"></script>
