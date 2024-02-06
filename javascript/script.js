@@ -69,4 +69,3 @@
     registerNewUser(username.toLowerCase(), password);
   });
 
-
