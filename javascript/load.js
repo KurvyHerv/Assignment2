@@ -1,15 +1,14 @@
 function showPage(){
-    document.getElementById("loader").style.display = "none";
+    $("#loader").attr('hidden', true)
     document.getElementById("main").style.display = "block";
 }
 setTimeout(showPage, 3000)
 
 
 function gameOver() {
-    var endAnimationContainer = document.getElementById("end");
-    var mainContainer = document.getElementById("main");
+    $("#end").attr('hidden', false)
+    $("#main").attr('hidden', true)
   
-    mainContainer.style.display = "none";
     
     // You can add additional logic here, e.g., displaying final score or other actions.
   
@@ -17,7 +16,7 @@ function gameOver() {
     setTimeout(function () {
       // Redirect to homepage.html after animation
       window.location.href = "homepage.html";
-    }, 2000); // Adjust the time according to the duration of your animation
+    }, 3000); // Adjust the time according to the duration of your animation
   }
 
   function beforeLeave() {
