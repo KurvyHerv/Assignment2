@@ -2,7 +2,7 @@ function showPage(){
     document.getElementById("loader").style.display = "none";
     document.getElementById("main").style.display = "block";
 }
-setTimeout(showPage, 5000)
+setTimeout(showPage, 3000)
 
 
 function gameOver() {
@@ -10,7 +10,6 @@ function gameOver() {
     var mainContainer = document.getElementById("main");
   
     mainContainer.style.display = "none";
-    endAnimationContainer.style.display = "block";
     
     // You can add additional logic here, e.g., displaying final score or other actions.
   
@@ -18,5 +17,5 @@ function gameOver() {
     setTimeout(function () {
       // Redirect to homepage.html after animation
       window.location.href = "homepage.html";
-    }, 1000); // Adjust the time according to the duration of your animation
+    }, 2000); // Adjust the time according to the duration of your animation
   }
