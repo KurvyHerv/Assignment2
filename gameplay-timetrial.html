@@ -8,51 +8,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Trial</title>
 </head>
-<body style="margin: 0;">
+<body style="margin: 0;" onbeforeunload="return beforeLeave()">
 <!-- loading lottie animation -->
   <div id="loader" class="animation"> 
       <dotlottie-player src="https://lottie.host/48806cc1-a964-4d78-b5b6-e478282114fd/9FWfRSgNNi.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
   </div>
 
-  <!-- <div style="display: none;" id="main" class="animate-bottom">
-    <div class="button-container">
-      <a class="previous round fw-bold" style="text-decoration: none;" href="homepage.html">&#8249; Go Back</a>
-    </div> -->
-
 <!-- game -->
 <div style="display: none;" id="main">
     <section id="game" style="background-image: url(images/wallpaper/home-bg.png); position: relative; background-position: center; background-repeat: no-repeat; background-size: cover;">
-      <div class="container-fluid text-center pt-100">
+      <!-- back button -->
+      <div class="button-container">
+        <a class="previous round fw-bold" style="text-decoration: none; position: absolute;" href="homepage.html">&#8249; Back</a>
+      </div>
+      <div class="container-fluid text-center pt-100" style="position: relative;">
         <p id="timer" style="text-align: center; font-size: 60px; margin-top: 0px;"></p>
         <h1 style="color: white;">Score: <span id="score">0</span></h1>
           <div id="board"></div>
       </div>
     </section>
-  
-      
-    <div id="footer" style="background-color: black;">
-        <footer class="footer">
-          <div class="main-links">
-            <div class="wrapper-links">
-              <div class="container fw-bold">
-                <a class="mlink" href="homepage.html#Home">Home</a>
-                <a class="mlink" href="homepage.html#Players">Players</a>
-                <a class="mlink" href="account.html">Account</a>
-                <a class="mlink" href="homepage.html#AboutUs">About Us</a>
-              </div>
-            </div>
-            <div class="wrapper-main">
-              <img src="images/logo.png" style="width: 150px; height: 125px;">
-            </div>
-            <div class="wrapper-main" style="color: white;">
-              2024 @ AnimalCrossingCross . All Rights Reserved.
-            </div>
-          </div>
-        </footer>
-    </div>
   </div>
   
-  <div id="end" class="animation">
+  <div id="end" class="animation" style="display: none;">
     <dotlottie-player src="https://lottie.host/91617a1d-4676-46b2-b9cc-21fdfb510ba7/Yk8L4VbPLE.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
   </div>
   

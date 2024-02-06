@@ -19,3 +19,7 @@ function gameOver() {
       window.location.href = "homepage.html";
     }, 2000); // Adjust the time according to the duration of your animation
   }
+
+  function beforeLeave() {
+    return "Are you sure you want to leave? Game progress will not be saved.";
+  }
