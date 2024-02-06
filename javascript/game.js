@@ -113,8 +113,9 @@ function crushCandy() {
     crushFive();
     crushFour();
     crushThree();
-    document.getElementById("score").innerText = score;
-
+    $("#score").text(score);
+    $("#finalScore").text(score);
+    localStorage.setItem("score",score);
 }
 
 function crushThree() {

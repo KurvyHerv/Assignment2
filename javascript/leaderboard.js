@@ -26,8 +26,8 @@
     }
   }
 
-  async function querySnapshotTop10(q) {
-    const querySnapshot = await getDocs(q);
+  async function querySnapshotTop10(j) {
+    const querySnapshot = await getDocs(j);
     if (querySnapshot.empty) {
       $("#leaderboardList2").append("<p>No users for leaderboard</p>")
     } else {
