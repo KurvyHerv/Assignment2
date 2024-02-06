@@ -28,6 +28,7 @@
     }
   }
 
+  // search player
   async function search(q) {
     const querySnapshot = await getDocs(q);
     if (querySnapshot.empty) {
@@ -39,6 +40,7 @@
     }
   }
 
+  // show leaderboard
   $( document ).ready(function() {
     $("#accountBtn").text(localStorage.getItem("username"));
     const q = query(collection(db, "users"), orderBy("score", "desc"));

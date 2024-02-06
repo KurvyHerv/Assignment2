@@ -4,4 +4,4 @@ function showPage(){
 }
 
 
-setTimeout(showPage, 3000)
+setTimeout(showPage, 5000)
