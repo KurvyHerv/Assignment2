@@ -8,13 +8,14 @@
     <title>Home Page</title>
 </head>
 <body>
+<!-- nav bar -->
     <nav id="navbar-example" class="navbar px-3 mb-3 navbar-expand-lg" style="background-color:rgb(176, 212, 255, 0.7); position: fixed; width: 100%; z-index: 2;">
       <a class="navbar-brand active" href="homepage.html"><img class="navbar-brand" src="images/logo.png" style="width: 60px; height: 50px;"></a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo" aria-controls="navbarTogglerDemo" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
+<!-- nav links -->
       <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="active fw-bold">
@@ -27,6 +28,7 @@
               <a class="nav-link" href="#AboutUs" style="color: white;">About us</a>
           </li>
         </ul>
+<!-- nav dropdown -->
         <span class="dropdown-center d-flex">
           <button class="btn btn-secondary dropdown-toggle fw-bold rounded-pill" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: rgb(63, 150, 255);" id="accountBtn">
             <img id="avatar" src="">
@@ -40,14 +42,19 @@
       </div>
     </nav>
 
+<!-- homepage -->
     <section id="Home" class="bg-image" style="background-image: url(images/wallpaper/home-bg.png); position: relative; background-position: center; background-repeat: no-repeat; background-size: cover;">
+      <!-- leaderboard top 10 -->
       <div class="container-fluid text-center">
         <div class="row">
-          <div class="col" style="background-color: rgba(255, 255, 255, 0.5); padding-top: 12vh;">
-            <div id="player-nav" style="overflow:scroll; height:700px;">
+          <div class="col" style="background-color: rgba(255, 255, 255, 0.5); padding-top: 15vh;">
+            <p>Leaderboard</p>
+            <div id="player-nav">
               <ol class="list-group list-group-numbered" id="leaderboardList2"></ol>
             </div>
           </div>
+
+          <!-- play game -->
           <div class="col-8" >
             <div class="row align-items-center justify-content-center d-flex">
               <div class="vh-100 d-flex justify-content-center align-items-center">
@@ -64,12 +71,13 @@
       </div>
     </section>
 
+  <!-- search for players -->
     <section id="Players" class="justify-content-center align-items-center" style="background-color: rgb(255, 255, 255); background-size: cover; padding-top: 50px; padding:1.5rem;">
       <div class="container-fluid">
         <div class="col" style="padding-left: 150px; padding-right: 150px; padding-top: 10vh;">
           <div class="d-flex">
             <input class="form-control me-2" type="search" id="search" placeholder="Search for Players" aria-label="Search">
-            <button class="btn btn-outline-success" id="submit">Search</button>
+            <button class="btn btn-style rounded-pill" id="submit" style="color: white;">Search</button>
           </div>
         </div>
         <div class="col" style="background-color: rgba(255, 255, 255, 0.5); padding-top: 5vh;">
@@ -81,6 +89,7 @@
       </div>
     </section>
 
+  <!-- about us page -->
     <section id="AboutUs">
         <div class="container-fluid" style="padding-left: 0; padding-right: 0;">
           <div class="col" style="height: 40vh;">
@@ -97,15 +106,15 @@
             <div class="row" style="padding-top: 5vh;">
               <div class="our-inspiration" style="padding-left: 10vw; padding-right: 10vw;">
                 <header><h1 class="fw-bold">Our Inspiration</h1></header>
-                <p style="white-space: pre-wrap;">"In our shared passion symphony, we crafted a digital sanctuary inspired by Animal Crossing. As architects of pixels and dreams, we immersed ourselves in collaborative artistry, weaving a narrative beyond the screen—a story celebrating connection and boundless possibilities. Our journey, an unfolding tapestry, encapsulated the joyous dance of collaboration. Rena's artistry, Hervin's wizardry, and our passion transformed challenges into shared victories. Our game, born from dream fusion, beckons players to a world where friendships thrive, imagination unfolds, and the infinite dance of dreams awaits—a canvas of shared virtual reality."</p>
+                <p style="white-space: pre-wrap;">"In our shared passion symphony, we crafted a digital sanctuary inspired by Animal Crossing. As architects of pixels and dreams, we immersed ourselves in collaborative artistry, weaving a narrative beyond the screen—a story celebrating connection and boundless possibilities. Our journey, an unfolding tapestry, encapsulated the joyous dance of collaboration. Rena's artistry, Hervin's wizardry, and our passion transformed challenges into shared victories. Our game, born from dream fusion."</p>
                   <div class="row">
                     <div class="col icon" style="padding-top: 5vh;">
                       <a class="link-icon" href="https://github.com/KurvyHerv/Assignment2.git"><img src="images/github-icon.png"></a>
-                        <div class="name">Github</div>
+                        <div class="name"></div>
                     </div>
                     <div class="col icon" style="padding-top: 5vh;">
                       <a class="link-icon" href="https://www.figma.com/file/dqUgrKoYk9B6MAlqAfmQlg/FED-assignment-wireframe?type=design&mode=design&t=XGqD6Qy5NksEdjTZ-1"><img src="images/figma-icon.png"></a>
-                        <div class="name">Figma</div>
+                        <div class="name"></div>
                     </div>
                   </div>
               </div>
@@ -114,6 +123,7 @@
         </div>
     </section>
 
+    <!-- footer -->
     <div id="footer" style="background-color: black;">
       <footer class="footer">
         <div class="main-links">
