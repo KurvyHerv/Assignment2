@@ -16,25 +16,32 @@
   const db = getFirestore(app);
 
   async function registerNewUser(username, password) {
-    await setDoc(doc(db, "users", username), {
-      username: username,
-      password: password,
-      score: 0
-    });
-    const querySnapshot = await getDocs(query(collection(db, "users"), where("username", "==", username.toLowerCase()), where("password", "==", password)));
+    var querySnapshot = await getDocs(query(collection(db, "users"), where("username", "==", username.toLowerCase())));
     if (querySnapshot.empty) {
-      console.log("An error occured")
+      await setDoc(doc(db, "users", username), {
+        username: username,
+        password: password,
+        score: 0
+      });
+      querySnapshot = await getDocs(query(collection(db, "users"), where("username", "==", username.toLowerCase()), where("password", "==", password)));
+      if (querySnapshot.empty) {
+        console.log("An error occured")
+      } else {
+        querySnapshot.forEach((doc) => {
+          window.location.href = "homepage.html";
+      });
+      }
     } else {
       querySnapshot.forEach((doc) => {
-        window.location.href = "login.html";
+        console.log("username exists")
     });
-    }
   }
+}
 
   async function querySnapshot(q) {
     const querySnapshot = await getDocs(q);
     if (querySnapshot.empty) {
-      console.log("Wrong password or username")
+      $("#wrongPwd").attr("hidden",false);
     } else {
       querySnapshot.forEach((doc) => {
         window.location.href = "homepage.html";
@@ -46,7 +53,8 @@
   $("#loginSubmit").click(function(){
     const username = $("#username").val();
     const password = $("#password").val();
-    localStorage.setItem("username",username);
+    localStorage.setItem("username",username.toLowerCase());
+    localStorage.setItem("password",password);
 
     const q = query(collection(db, "users"), where("username", "==", username.toLowerCase()), where("password", "==", password));
     querySnapshot(q);
@@ -55,6 +63,8 @@
   $("#signUp").click(function(){
     const username = $("#registerUsername").val();
     const password = $("#registerPassword").val();
+    localStorage.setItem("username",username.toLowerCase());
+    localStorage.setItem("password",password);
 
     registerNewUser(username.toLowerCase(), password);
   });
