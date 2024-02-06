@@ -41,7 +41,7 @@ In our project, some of the main features we included was;
 
 ### Features Left to Implement
 
-- Power ups to be made available when a certain special row or column is cleared. 
+- Power ups to be made available when a certain criteria is met such as when four tiles in a row row or column is cleared. 
 - Obstacles to make the game more challenging. 
 
 ## Technologies Used
@@ -50,6 +50,10 @@ In this section, you should mention all of the languages, frameworks, libraries,
 
 - [JQuery](https://jquery.com)
     - The project uses **JQuery** to simplify DOM manipulation.
+- [Firebase](https://firebase.google.com)
+    - The project uses **Firebase** to host the database that this project uses
+- [Bootstrap](https://getbootstrap.com)
+    - The project uses **Bootstrap** to simplify website creation
 
 
 ## Testing
