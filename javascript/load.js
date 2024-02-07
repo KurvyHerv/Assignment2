@@ -14,12 +14,12 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-var prevScore = 0
+var prevScore = 0;
 
 async function setHighscore(username, score) {
   const querySnapshot = await getDocs(query(collection(db, "users"), where("username", "==", username)));
   querySnapshot.forEach((doc) => {
-    prevScore = doc.data().score
+    prevScore = doc.data().score;
   });
   if (prevScore < score) {
     await updateDoc(doc(db, "users", username), {
@@ -29,16 +29,16 @@ async function setHighscore(username, score) {
 }
 
 function showPage(){
-    $("#loader").attr('hidden', true)
+    $("#loader").attr('hidden', true);
     document.getElementById("main").style.display = "block";
 }
-setTimeout(showPage, 3000)
+setTimeout(showPage, 3000);
 
 
 export function gameOver() {
     const username = localStorage.getItem("username");
     const score = Number(localStorage.getItem("score"));
-    var prevScore = 0
+    var prevScore = 0;
     $("#end").attr('hidden', false);
     $("#main").attr('hidden', true);
     setHighscore(username, score, prevScore);
