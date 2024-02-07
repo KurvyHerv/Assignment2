@@ -23,27 +23,6 @@ body{
     min-height: 100%;
 }
 
-@media screen and (max-width: 1000px){
-    p{
-        font-size: 15px;
-    }
-
-    .about-us img{
-        width: 40px;
-        height: 40px;
-    }
-}
-
-@media screen and (max-width: 880px){
-    p{
-        font-size: 12px;
-    }
-    .about-us img{
-        width: 30px;
-        height: 30px;
-    }
-}
-
 /* background */
 #indexBg {
     position: fixed;
@@ -83,6 +62,36 @@ section {
     background-color: rgb(124, 159, 255);
 }
 
+/* Search for Players */
+#Players p {
+    font-size: 50px;
+    background-color: rgb(96, 121, 179);
+    color: white;
+    border-radius: 50px;
+    width: 550px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1000px){
+    #Players p {
+        font-size: 30px;
+        width: 300px;
+    }
+}
+
+#search-bar{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+@media screen and (max-width: 550px){
+    #search-bar{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
 /* about us page */
 .about-us{
     padding: 1.5rem;
@@ -114,6 +123,32 @@ section {
     align-items: center;
 }
 
+@media screen and (max-width: 1000px){
+    p{
+        font-size: 15px;
+    }
+
+    #AboutUs img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 880px){
+    p{
+        font-size: 12px;
+    }
+    #AboutUs img{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    #AboutUs img {
+        display: none;
+    }
+}
 
 /* footer */
 footer{

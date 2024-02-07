@@ -47,7 +47,7 @@
       <!-- leaderboard top 10 -->
       <div class="container-fluid text-center">
         <div class="row">
-          <div class="col" style="background-color: rgba(255, 255, 255, 0.5); padding-top: 15vh;">
+          <div class="col-sm" style="background-color: rgba(255, 255, 255, 0.5); padding-top: 15vh;">
             <p>Leaderboard</p>
             <div id="player-nav">
               <ol class="list-group list-group-numbered" id="leaderboardList2"></ol>
@@ -55,28 +55,27 @@
           </div>
 
           <!-- play game -->
-          <div class="col-8" >
-            <div class="row align-items-center justify-content-center d-flex">
+          <div class="col-sm" >
               <div class="vh-100 d-flex justify-content-center align-items-center">
                 <div class="row">
-                  <div class="d-grid gap-2">
                     <div class="d-grid gap-2 d-md-block">
                       <button class="btn btn-lg btn-style fw-bold rounded-pill" type="button" style="color: white;" onclick="window.location.href='gameplay-timetrial.html'">Time Trial</button>
                       <button class="btn btn-lg btn-style fw-bold rounded-pill" type="button" style="color: white;" onclick="window.location.href='gameplay-endless.html'">Zen</button>
                     </div>
-                  </div>
+                </div>
               </div>
           </div>
-          </div>
+        </div>
       </div>
     </section>
 
   <!-- search for players -->
     <section id="Players" class="justify-content-center align-items-center" style="background-color: rgb(255, 255, 255); background-size: cover; padding-top: 50px; padding:1.5rem;">
-      <div class="container-fluid">
-        <div class="col" style="padding-left: 150px; padding-right: 150px; padding-top: 10vh;">
+      <div class="container-fluid text-center">
+        <p>Players</p>
+        <div class="col" style="padding-top: 5vh;" id="search-bar">
           <div class="d-flex">
-            <input class="form-control me-2" type="search" id="search" placeholder="Search for Players" aria-label="Search">
+            <input class="form-control me-2" type="search" id="search" placeholder="Enter player username" aria-label="Search">
             <button class="btn btn-style rounded-pill" id="submit" style="color: white;">Search</button>
           </div>
         </div>
