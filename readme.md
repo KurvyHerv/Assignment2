@@ -27,7 +27,7 @@ In our project, some of the main features we included was;
 
 3. An account page for players to view their account details.
 
-4. The game
+4. The game that requires players to clear lanes to earn points.
  
 ### Existing Features
 
@@ -62,7 +62,7 @@ In our project, some of the main features we included was;
     3. Change the necessary fields.
     4. The new information will be changed.
 
-2. Login/ Register:
+2. Login/Register:
     1. Click on "Log in"
     2. Enter username and password of existing account.
     3. If you do not have an existing account, you can create a new account by clicking on "Register".

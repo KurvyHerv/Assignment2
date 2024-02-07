@@ -51,6 +51,8 @@ export function gameOver() {
     }, 3000); 
   }
 
-  function beforeLeave() {
-    return "Are you sure you want to leave? Game progress will not be saved.";
-  }
+  window.addEventListener('beforeunload', function(event) {
+    event.preventDefault();
+    event.returnValue = '';
+    alert('Your game data will not be saved if you leave the page.');
+  });

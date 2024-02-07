@@ -25,7 +25,7 @@
       });
       querySnapshot = await getDocs(query(collection(db, "users"), where("username", "==", username.toLowerCase()), where("password", "==", password)));
       if (querySnapshot.empty) {
-        console.log("An error occured")
+        console.log("An error occured.")
       } else {
         querySnapshot.forEach((doc) => {
           window.location.href = "homepage.html";
@@ -33,7 +33,7 @@
       }
     } else {
       querySnapshot.forEach((doc) => {
-        console.log("username exists")
+        console.log("Username already exists")
     });
   }
 }
