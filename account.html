@@ -111,7 +111,7 @@
                           <li class="list-group-item">
                             <div class="row g-3 align-items-center">
                               <div class="col-auto">
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <button id="changeBtn" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                   Change
                                 </button>
                               </div>
@@ -155,6 +155,9 @@
     $("#accountName").text(localStorage.getItem("username"));
     $("#readOnlyUsername").val(localStorage.getItem("username"));
     $("#readOnlyPassword").val(localStorage.getItem("password"));
+  });
+
+  $("#changeBtn").click(function(){
     $("#changeUsername").val(localStorage.getItem("username"));
     $("#changePassword").val(localStorage.getItem("password"));
   });
