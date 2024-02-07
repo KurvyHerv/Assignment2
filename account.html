@@ -10,13 +10,14 @@
 
 
 <body style="background-color: rgb(255, 244, 232);">
+  <!-- navbar -->
       <nav id="navbar-example" class="navbar px-3 mb-3 navbar-expand-lg" style="background-color:rgb(248, 225, 196); position: fixed; width: 100%; z-index: 2;">
         <a class="navbar-brand active" href="homepage.html"><img class="navbar-brand" src="images/logo.png" style="width: 60px; height: 50px;"></a>
   
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo" aria-controls="navbarTogglerDemo" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-  
+  <!-- links -->
         <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="active fw-bold">
@@ -29,6 +30,7 @@
                 <a class="nav-link" href="homepage.html#AboutUs" style="color: #74664B;">About us</a>
             </li>
           </ul>
+<!-- dropdown menu -->
           <span class="dropdown-center d-flex">
             <button class="btn btn-secondary dropdown-toggle fw-bold rounded-pill" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="accountBtn" style="background-color: rgb(162, 152, 139);">
               Account
@@ -40,16 +42,16 @@
           </span>
         </div>
       </nav>
-      <section>
-      <div class="container-fluid align-items-center justify-content-center d-flex">
-          <div class="row">
-            <div class="col">
 
-              <div class="card" style="width: 18rem;">
-                  <!-- account image -->
-                  <img class="card-img-top" src="..." alt="Card image cap"> 
+<!-- account section -->
+    <section id="Account">
+      <div class="container-fluid align-items-center justify-content-center d-flex">
+          <div class="row acc-cont">
+              <!-- account nav links -->
+            <div class="col acc-nav">
+              <div class="card">
                   <div class="card-body">
-                    <h5 class="card-title text-center fw-bold" id="accountBtn" style="color: #74664B;">Account name</h5>
+                    <h5 class="card-title text-center" id="accountBtn" style="color: #74664B;">Account name</h5>
                   </div>
                   <div class="list-group" style="border-color: rgba(162, 152, 139, 0.175);"> 
                       <button type="button" class="list-group-item list-group-item-action" style="padding-left: 30px; color: #74664B;" onclick="window.location.href='#Profile'">Profile</button>
@@ -58,8 +60,9 @@
                   </div>
               </div>
             </div>
-
-            <div class="col-8">
+            
+            <!-- change account details -->
+            <div class="col acc-info">
               <div class="row d-flex">
                   <div class="card" style="width: 50rem;" id="Profile">
                       <ul class="list-group list-group-flush">
@@ -135,6 +138,7 @@
         </div>
       </section>
     
+      <!-- footer -->
     <div id="footer" style="background-color: rgb(162, 152, 139);">
       <footer class="footer">
         <div class="main-links">

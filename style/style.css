@@ -193,3 +193,16 @@ footer a{
     width: 100%; 
     height: 100%;
 }
+
+/* account */
+@media screen and (max-width: 1050px) {
+    #Account .acc-nav{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #Account .acc-info {
+        width: 22rem;
+    }
+}
