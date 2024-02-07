@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zen</title>
+    <title>Time Trial</title>
 </head>
 <body style="margin: 0;" onbeforeunload="return beforeLeave()">
 <!-- loading lottie animation -->
@@ -16,18 +16,19 @@
 
 <!-- game -->
 <div style="display: none;" id="main">
-    <section id="game" style="background-image: url(images/wallpaper/home-bg.png); position: relative; background-position: center; background-repeat: no-repeat; background-size: cover;">
-      <!-- back button -->
-      <div class="button-container">
-        <a class="previous round fw-bold" style="text-decoration: none; position: absolute;" href="homepage.html">&#8249; Back</a>
-      </div>
-      <div class="container-fluid text-center justify-content-center" style="position: relative; padding-top: 20vh;">
-        <h1 style="color: white;">Score: <span id="score">0</span></h1>
-          <div id="board"></div>
-      </div>
-    </section>
+  <div class="button-container" style="z-index: 2; position: fixed;">
+    <a class="previous round fw-bold back-btn" href="homepage.html">&#8249;</a>
   </div>
 
+    <section id="game" style="background-image: url(images/wallpaper/home-bg.png); position: relative; background-position: center; background-repeat: no-repeat; background-size: cover;">
+        <div class="container-fluid text-center pt-100" style="position: relative;">
+          <h1 style="color: white;">Score: <span id="score">0</span></h1>        
+          <div id="board"></div>
+        </div>
+      </div>
+    </section>
+  </div>  
+  
 <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 <script src="javascript/game.js"></script>
 <script src="javascript/timer.js" type="module"></script>

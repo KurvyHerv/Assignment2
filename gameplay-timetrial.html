@@ -16,21 +16,22 @@
 
 <!-- game -->
 <div style="display: none;" id="main">
+  <div class="button-container" style="z-index: 2; position: fixed;">
+    <a class="previous round fw-bold back-btn" href="homepage.html">&#8249;</a>
+  </div>
+
     <section id="game" style="background-image: url(images/wallpaper/home-bg.png); position: relative; background-position: center; background-repeat: no-repeat; background-size: cover;">
-      <!-- back button -->
-      <div class="button-container">
-        <a class="previous round fw-bold" style="text-decoration: none; position: absolute;" href="homepage.html">&#8249; Back</a>
-      </div>
-      <div class="container-fluid text-center pt-100" style="position: relative;">
-        <p id="timer" style="text-align: center; font-size: 60px; margin-top: 0px;"></p>
-        <h1 style="color: white;">Score: <span id="score">0</span></h1>
+        <div class="container-fluid text-center pt-100" style="position: relative;">
+          <p id="timer" style="text-align: center; font-size: 60px; margin-top: 0px;"></p>
+          <h1 style="color: white;">Score: <span id="score">0</span></h1>        
           <div id="board"></div>
+        </div>
       </div>
     </section>
   </div>
 
   <!-- game over animation -->
-  <div class="col animation text-center" id="end">
+  <div class="col animation text-center" id="end" hidden>
     <dotlottie-player src="https://lottie.host/91617a1d-4676-46b2-b9cc-21fdfb510ba7/Yk8L4VbPLE.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
     <h1 style="color: white;">Final Score: <span id="finalScore">0</span></h1>
   </div>

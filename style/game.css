@@ -21,6 +21,22 @@ body {
     text-align: center;
 }
 
+section{
+  justify-content: center;
+  align-items: center;
+}
+
+/* background */
+.game-bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index:-100;
+}
+
+/* timer */
 h1{
   background-color: rgb(151, 186, 208);
   width: 250px;
@@ -28,6 +44,7 @@ h1{
   margin: 0 auto;
 }
 
+/* game board */
 #board {
     width: 500px;
     height: 500px;
@@ -48,9 +65,34 @@ h1{
     border-color: #ffffff;
 }
 
+@media screen and (max-width: 525px) {
+  #board {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    border: 15px solid rgb(151, 186, 208);
+    border-radius: 50px;
+}
+
+#board img {
+    width: 30px;
+    height: 30px;
+    border: 5px solid;
+    border-radius: 5px;
+    border-color: #ffffff;
+}
+}
+
+
+/* back button */
 .button-container{
     display: flex;
     padding: 50px;
+}
+
+.back-btn {
+  text-decoration: none;
+  position: fixed;
 }
 
 a {
@@ -61,19 +103,21 @@ a {
   }
   
   a:hover {
-    background-color: rgb(109, 102, 93);;
-    color: rgb(255, 255, 255);
+    background-color: rgb(233, 233, 233);
+    color: rgb(88, 139, 187);
   }
   
   .previous {
-    background-color: rgb(162, 152, 139);;
-    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(35, 149, 255);
+    border: 5px solid ;
   }
   
   .round {
     border-radius: 50%;
   }
 
+  /* lottie animation */
 .animation{
   display: flex;
   flex-direction: column;
