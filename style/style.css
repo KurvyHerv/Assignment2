@@ -206,3 +206,11 @@ footer a{
         width: 22rem;
     }
 }
+
+.gamemode {
+    transition: all 0.3;
+}
+
+.gamemode:hover {
+    transform: scale(1.15);
+}
