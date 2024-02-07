@@ -1,5 +1,5 @@
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
-  import { getFirestore, doc, setDoc, getDocs, collection, query, where} from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
+  import { getFirestore, doc, setDoc, getDocs, collection, query, where, deleteDoc} from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
 
   // Firebase configuration
   const firebaseConfig = {
@@ -36,7 +36,7 @@
         console.log("Username already exists")
     });
   }
-}
+};
 
   async function querySnapshot(q) {
     const querySnapshot = await getDocs(q);
@@ -44,16 +44,49 @@
       $("#wrongPwd").attr("hidden",false);
     } else {
       querySnapshot.forEach((doc) => {
+        localStorage.setItem("score", doc.data().score);
         window.location.href = "homepage.html";
     });
     }
+  };
+
+  async function delDoc(username) {
+    await deleteDoc(doc(db, "users", username));
   }
+
+  async function changeInfo(username, password, oldUsername) {
+    var querySnapshot = await getDocs(query(collection(db, "users"), where("username", "==", username.toLowerCase())));
+    if (querySnapshot.empty) {
+      await setDoc(doc(db, "users", username), {
+        username: username,
+        password: password,
+        score: Number(localStorage.getItem("score"))
+      });
+      delDoc(oldUsername);
+          localStorage.setItem("username",username.toLowerCase());
+          localStorage.setItem("password",password);
+          location.reload();
+    } else if (username == oldUsername) {
+      await setDoc(doc(db, "users", username), {
+        username: username,
+        password: password,
+        score: Number(localStorage.getItem("score"))
+      });
+        localStorage.setItem("username",username.toLowerCase());
+        localStorage.setItem("password",password);
+        location.reload();
+    } else {
+      querySnapshot.forEach((doc) => {
+        console.log("Username already exists")
+      });
+    }
+  };
 
   $("#loginSubmit").click(function(){
     const username = $("#username").val();
     const password = $("#password").val();
-    localStorage.setItem("username",username.toLowerCase());
-    localStorage.setItem("password",password);
+    localStorage.setItem("username", username.toLowerCase());
+    localStorage.setItem("password", password);
 
     const q = query(collection(db, "users"), where("username", "==", username.toLowerCase()), where("password", "==", password));
     querySnapshot(q);
@@ -68,3 +101,9 @@
     registerNewUser(username.toLowerCase(), password);
   });
 
+  $("#saveChanges").click(function(){
+    const oldUsername = localStorage.getItem("username")
+    const username = $("#changeUsername").val().toLowerCase();
+    const password = $("#changePassword").val();
+    changeInfo(username, password, oldUsername);
+  });

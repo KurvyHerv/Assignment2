@@ -27,6 +27,6 @@ var x = setInterval(function() {
     document.getElementById("timer").innerHTML = "TIMES UP!";
     gameOver();
   }
-}, 2000);
+}, 1000);
 
 
