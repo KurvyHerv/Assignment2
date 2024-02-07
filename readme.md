@@ -100,7 +100,23 @@ You should also mention in this section any interesting bugs or problems you dis
 - The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
 
 ### Media
-- The photos used in this site were obtained from ...
+
+- The photos I used for the game icons are from; 
+    - https://lovesoup.gumroad.com/l/xtgvJQ
+
+- The photos I used for the About-us icons;
+    - https://play.google.com/store/apps/details?id=com.figma.mirror&hl=en_US&pli=1
+    - https://www.flaticon.com/free-icon/github-logo_25231
+
+- The photos I used for the background and button is from;
+    - https://www.spoonflower.com/en/fabric/14383072-animal-crossing-inspired-leafes-small-by-grafikdesign-radler
+    - https://froggychairr.tumblr.com/post/611575749045059584/acnh-desktop-wallpapers-requested-by-anon-feel
+
+
+- The videos I used for the background is from;
+    - https://mylivewallpapers.com/games/animal-crossing-live-wallpaper/
+    - https://moewalls.com/landscape/sea-of-stars-live-wallpaper/
+
 
 ### Acknowledgements
 
