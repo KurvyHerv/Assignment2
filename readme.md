@@ -97,7 +97,7 @@ You should also mention in this section any interesting bugs or problems you dis
 ## Credits
 
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+- All the texts we made were original
 
 ### Media
 
@@ -111,7 +111,6 @@ You should also mention in this section any interesting bugs or problems you dis
 - The photos I used for the background and button is from;
     - https://www.spoonflower.com/en/fabric/14383072-animal-crossing-inspired-leafes-small-by-grafikdesign-radler
     - https://froggychairr.tumblr.com/post/611575749045059584/acnh-desktop-wallpapers-requested-by-anon-feel
-
 
 - The videos I used for the background is from;
     - https://mylivewallpapers.com/games/animal-crossing-live-wallpaper/
