@@ -42,7 +42,7 @@ function showPage(){
 setTimeout(showPage, 3000);
 
 
-export function gameOver() {
+export function gameOver() { 
     const username = localStorage.getItem("username");
     const score = Number(localStorage.getItem("score"));
     var prevScore = 0;
