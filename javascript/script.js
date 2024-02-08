@@ -30,6 +30,7 @@ async function registerNewUser(username, password) {
       console.log("An error occured.");
     } else {
       querySnapshot.forEach((doc) => {
+        localStorage.setItem("score", doc.data().score);
         window.location.href = "homepage.html";
     });
     }
@@ -40,6 +41,7 @@ async function registerNewUser(username, password) {
 }
 }
 
+/* login new user */
 async function querySnapshot(q) {
   const querySnapshot = await getDocs(q);
   if (querySnapshot.empty) {

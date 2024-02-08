@@ -40,7 +40,6 @@ function startGame() {
             tile.addEventListener("dragstart", dragStart); //click on a tile, initialize drag process
             tile.addEventListener("dragover", dragOver);  //clicking on tile, moving mouse to drag the tile
             tile.addEventListener("dragenter", dragEnter); //dragging tile onto another tile
-            tile.addEventListener("dragleave", dragLeave); //leave tile over another tile
             tile.addEventListener("drop", dragDrop); //dropping a tile over another tile
             tile.addEventListener("dragend", dragEnd); //after drag process completed, swap tiles
 
@@ -66,9 +65,6 @@ function dragEnter(e) {
     e.preventDefault();
 }
 
-function dragLeave() {
-
-}
 
 function dragDrop() {
     //this refers to the target tile that was dropped on
