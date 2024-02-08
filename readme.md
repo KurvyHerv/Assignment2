@@ -97,7 +97,9 @@ You should also mention in this section any interesting bugs or problems you dis
 ## Credits
 
 ### Content
-- All the texts we made were original
+
+- A portion of our game was inspired by this video:
+https://youtu.be/8yIKZQMGi0A?si=vjvJZKg2Ko-p4O3L
 
 ### Media
 
