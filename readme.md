@@ -116,6 +116,9 @@ You should also mention in this section any interesting bugs or problems you dis
     - https://mylivewallpapers.com/games/animal-crossing-live-wallpaper/
     - https://moewalls.com/landscape/sea-of-stars-live-wallpaper/
 
+- The videos I used for the game modes is from;
+    - https://play.nintendo.com/themes/friends/kk-slider/
+    - https://thecrossingboard.com/news/villager-spotlight-sasha/
 
 ### Acknowledgements
 

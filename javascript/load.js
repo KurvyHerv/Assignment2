@@ -16,6 +16,12 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 var prevScore = 0;
 
+window.addEventListener('beforeunload', function(event) {
+  event.preventDefault();
+  event.returnValue = '';
+  alert('Your game data will not be saved if you leave the page.');
+});
+
 async function setHighscore(username, score) {
   const querySnapshot = await getDocs(query(collection(db, "users"), where("username", "==", username)));
   querySnapshot.forEach((doc) => {
@@ -42,17 +48,11 @@ export function gameOver() {
     $("#end").attr('hidden', false);
     $("#main").attr('hidden', true);
     setHighscore(username, score, prevScore);
-
+    window.onbeforeunload = null;
   
     // Wait for the animation to finish
     setTimeout(function () {
       // Redirect to homepage.html after animation
       window.location.href = "homepage.html";
-    }, 3000); 
+    }, 3000);
   }
-
-  window.addEventListener('beforeunload', function(event) {
-    event.preventDefault();
-    event.returnValue = '';
-    alert('Your game data will not be saved if you leave the page.');
-  });
