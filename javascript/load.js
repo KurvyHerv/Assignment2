@@ -37,6 +37,7 @@ async function setHighscore(username, score) {
 function showPage(){
     $("#loader").attr('hidden', true);
     document.getElementById("main").style.display = "block";
+    
 }
 setTimeout(showPage, 3000);
 
