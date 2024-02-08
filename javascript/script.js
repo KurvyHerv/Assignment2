@@ -35,7 +35,7 @@ async function registerNewUser(username, password) {
     }
   } else {
     querySnapshot.forEach((doc) => {
-      console.log("Username already exists");
+      $("#usernameExistReg").attr("hidden",false);
   });
 }
 }
@@ -79,7 +79,7 @@ async function changeInfo(username, password, oldUsername) {
       location.reload();
   } else {
     querySnapshot.forEach((doc) => {
-      console.log("Username already exists");
+      $("#usernameExist").attr("hidden",false);
     });
   }
 }
